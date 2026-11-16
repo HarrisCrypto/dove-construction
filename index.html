@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOVE Construction — Kitchen &amp; Bathroom Remodels, Additions &amp; Decks in Cushing, OK</title>
+<meta name="description" content="DOVE Construction — family-owned remodeling &amp; construction in Cushing, Oklahoma since 2015. Kitchen &amp; bath remodels, home additions, decks, flooring. Free estimates. Call (918) 399-3788.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%238AFF00'/%3E%3Ctext x='32' y='45' font-family='Arial Black,Arial,sans-serif' font-size='34' font-weight='900' fill='%23101210' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E">
+<style>
+/* ---------- fonts (self-hosted) ---------- */
+@font-face{font-family:'Oswald';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/oswald-600.woff2') format('woff2')}
+@font-face{font-family:'Oswald';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/oswald-700.woff2') format('woff2')}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/barlow-400.woff2') format('woff2')}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/barlow-600.woff2') format('woff2')}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/barlow-700.woff2') format('woff2')}
+/* ---------- tokens ---------- */
+:root{
+  --lime:#8AFF00; --lime-deep:#6FD400; --lime-soft:#EFFFDB;
+  --ink:#101210; --ink-2:#1A1D1A; --ink-3:#232623;
+  --paper:#FAFAF6; --white:#FFFFFF;
+  --body:#2E322C; --muted:#5A5E55; --muted-lt:#A9AEA4;
+  --line:rgba(16,18,16,.14); --line-lt:rgba(255,255,255,.16);
+  --radius:10px; --radius-sm:6px;
+  --shadow-card:0 2px 10px rgba(16,18,16,.08);
+  --shadow-raised:0 10px 30px rgba(16,18,16,.22);
+  --font-d:'Oswald','Arial Narrow',system-ui,sans-serif;
+  --font-b:'Barlow',system-ui,-apple-system,sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+/* ---------- reset ---------- */
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-b);font-size:16px;line-height:1.6;color:var(--body);background:var(--paper);-webkit-font-smoothing:antialiased}
+img,picture{display:block;max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--lime-deep);outline-offset:2px}
+::selection{background:var(--lime);color:var(--ink)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:12px 18px;z-index:200;font-weight:700}
+.skip:focus{left:12px;top:12px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+section{scroll-margin-top:96px}
+.eyebrow{font-family:var(--font-d);font-weight:600;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;display:inline-flex;align-items:center;gap:.7rem;color:var(--lime-deep)}
+.eyebrow::before{content:"";width:34px;height:3px;background:var(--lime);flex:none}
+.sec-head{max-width:680px;margin-bottom:40px}
+.sec-head h2{font-family:var(--font-d);font-weight:700;font-size:clamp(1.85rem,3.8vw,2.7rem);line-height:1.05;letter-spacing:.01em;text-transform:uppercase;color:var(--ink);margin:.7rem 0 .7rem}
+.sec-head p{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--font-d);font-weight:600;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;padding:.9rem 1.5rem;border-radius:var(--radius-sm);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s var(--ease),transform .2s var(--ease),border-color .2s var(--ease),color .2s var(--ease);white-space:nowrap;line-height:1.2}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-lime{background:var(--lime);color:var(--ink)}
+.btn-lime:hover{background:var(--lime-deep);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn-ghost:hover{border-color:#fff;transform:translateY(-2px)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:var(--ink-2);transform:translateY(-2px)}
+.btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
+/* ---------- utility strip ---------- */
+.utility{background:var(--ink);color:var(--muted-lt);font-size:.78rem;letter-spacing:.04em}
+.utility .wrap{display:flex;justify-content:space-between;align-items:center;gap:6px 18px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.utility b{color:#fff;font-weight:700}
+.utility .u-phone{color:var(--lime);text-decoration:none;font-weight:700}
+.utility .u-phone:hover{text-decoration:underline}
+/* ---------- header ---------- */
+header.site{position:sticky;top:0;z-index:60;background:rgba(250,250,246,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:10px;padding-bottom:10px}
+.brand{display:flex;align-items:center;text-decoration:none;min-width:0;flex:none}
+.brand img{height:46px;width:auto}
+nav.main{display:flex;align-items:center;gap:28px}
+nav.main a{font-family:var(--font-d);font-weight:600;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+nav.main a:hover{color:var(--ink)}
+.header-cta{display:flex;align-items:center;gap:10px;flex:none}
+.header-phone{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--font-d);font-weight:600;font-size:.92rem;letter-spacing:.04em;color:var(--ink);text-decoration:none;white-space:nowrap}
+.header-phone svg{width:18px;height:18px}
+.menu-btn{display:none;background:none;border:2px solid var(--line);border-radius:var(--radius-sm);width:48px;height:48px;align-items:center;justify-content:center;cursor:pointer;color:var(--ink)}
+.menu-btn svg{width:24px;height:24px}
+.mobile-menu{display:none;border-top:1px solid var(--line);background:var(--paper);padding:8px 24px 16px}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:12px 0;font-family:var(--font-d);font-weight:600;font-size:1rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--line)}
+.mobile-menu a:last-child{border-bottom:none}
+/* ---------- hero ---------- */
+.hero{background:var(--ink);color:#fff;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:72px 0 80px}
+.hero h1{font-family:var(--font-d);font-weight:700;font-size:clamp(2.5rem,6.4vw,4.3rem);line-height:1.02;letter-spacing:.01em;text-transform:uppercase;margin:.9rem 0 1.1rem}
+.hero h1 .accent{color:var(--lime)}
+.hero .lede{font-size:1.13rem;line-height:1.6;color:rgba(255,255,255,.82);max-width:34rem}
+.hero .lede b{color:#fff}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.hero-cta .btn{padding:1rem 1.7rem;font-size:1rem}
+.hero-proof{margin-top:26px;font-size:.92rem;color:var(--muted-lt);display:flex;flex-wrap:wrap;gap:8px 22px}
+.hero-proof b{color:var(--lime);font-weight:700}
+.hero-photo{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-raised)}
+.hero-photo img{width:100%;height:auto}
+.hero-photo figcaption{position:absolute;left:12px;bottom:12px;max-width:78%;background:rgba(16,18,16,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:.85rem;line-height:1.35;padding:9px 12px;border-radius:var(--radius-sm)}
+.hero-photo figcaption b{display:block;font-family:var(--font-d);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;color:var(--lime)}
+/* ---------- trust strip ---------- */
+.trust{background:var(--lime);color:var(--ink)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-top:26px;padding-bottom:26px}
+.trust-item{text-align:center}
+.trust-item .num{font-family:var(--font-d);font-weight:700;font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.05;text-transform:uppercase}
+.trust-item .lbl{font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;opacity:.75;margin-top:4px}
+/* ---------- sections ---------- */
+.section{padding:80px 0}
+.section.tight{padding:64px 0}
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;box-shadow:var(--shadow-card);transition:transform .2s var(--ease),box-shadow .2s var(--ease)}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--shadow-raised)}
+.svc .ic{width:56px;height:56px;border-radius:var(--radius-sm);background:var(--lime-soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px;color:var(--ink)}
+.svc .ic svg{width:28px;height:28px}
+.svc h3{font-family:var(--font-d);font-weight:700;font-size:1.28rem;line-height:1.15;text-transform:uppercase;color:var(--ink);margin-bottom:8px}
+.svc p{font-size:.96rem;color:var(--muted)}
+.svc .tags{margin-top:14px;font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--lime-deep)}
+.also{margin-top:28px;background:var(--lime-soft);border:1px solid rgba(111,212,0,.35);border-radius:var(--radius);padding:20px 24px;font-size:.98rem}
+.also b{color:var(--ink)}
+/* gallery */
+.gallery-sec{background:var(--ink);color:#fff}
+.gallery-sec .sec-head h2{color:#fff}
+.gallery-sec .sec-head p{color:var(--muted-lt)}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.work{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--ink-2)}
+.work img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;display:block}
+.work.tall img{aspect-ratio:3/4}
+.work figcaption{position:absolute;left:12px;bottom:12px;max-width:78%;background:rgba(16,18,16,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:.85rem;line-height:1.35;padding:9px 12px;border-radius:var(--radius-sm)}
+.work figcaption b{display:block;font-family:var(--font-d);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;color:var(--lime)}
+.gallery-note{margin-top:24px;font-size:.9rem;color:var(--muted-lt)}
+/* about */
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+.about-copy p{margin-bottom:16px}
+.about-copy p.lede{font-size:1.12rem;color:var(--ink)}
+.crew-list{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 8px}
+.crew-list span{font-family:var(--font-d);font-weight:600;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;color:var(--ink)}
+.checks{list-style:none;margin-top:20px}
+.checks li{display:flex;gap:12px;align-items:flex-start;padding:9px 0;border-bottom:1px solid var(--line);font-size:.98rem}
+.checks li:last-child{border-bottom:none}
+.checks svg{width:22px;height:22px;flex:none;color:var(--lime-deep);margin-top:2px}
+.about-photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-card)}
+.about-photo img{width:100%;height:auto}
+.about-photo figcaption{font-size:.82rem;color:var(--muted);background:#fff;padding:10px 14px;border-top:1px solid var(--line)}
+.quote-card{margin-top:24px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--lime);border-radius:var(--radius-sm);padding:22px 24px;box-shadow:var(--shadow-card)}
+.quote-card blockquote{font-size:1.08rem;line-height:1.55;color:var(--ink)}
+.quote-card cite{display:block;margin-top:12px;font-style:normal;font-size:.88rem;color:var(--muted)}
+.quote-card cite b{color:var(--ink)}
+.quote-theme{margin-top:16px;font-size:.92rem;color:var(--muted)}
+/* process */
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:step}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;position:relative}
+.step .step-no{font-family:var(--font-d);font-weight:700;font-size:3rem;line-height:1;color:var(--lime);-webkit-text-stroke:1.5px var(--lime-deep)}
+.step h3{font-family:var(--font-d);font-weight:700;font-size:1.3rem;text-transform:uppercase;color:var(--ink);margin:14px 0 8px}
+.step p{font-size:.96rem;color:var(--muted)}
+/* quote */
+.quote-sec{background:var(--ink);color:#fff}
+.quote-sec .sec-head h2{color:#fff}
+.quote-sec .sec-head p{color:var(--muted-lt)}
+.quote-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start}
+.form-card{background:#fff;color:var(--body);border-radius:var(--radius);padding:30px 28px;box-shadow:var(--shadow-raised)}
+.form-card h3{font-family:var(--font-d);font-weight:700;font-size:1.35rem;text-transform:uppercase;color:var(--ink);margin-bottom:6px}
+.form-card .form-sub{font-size:.94rem;color:var(--muted);margin-bottom:20px}
+.field{margin-bottom:16px}
+.field label{display:block;font-weight:700;font-size:.88rem;color:var(--ink);margin-bottom:6px}
+.field label .req{color:#C22E2E}
+.field input,.field select,.field textarea{width:100%;border:2px solid var(--line);border-radius:var(--radius-sm);padding:12px 14px;font-size:1rem;background:#fff}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--lime-deep)}
+.field .hint{font-size:.82rem;color:var(--muted);margin-top:5px}
+.field .err{display:none;font-size:.85rem;color:#C22E2E;margin-top:5px;font-weight:600}
+.field.invalid input,.field.invalid select{border-color:#C22E2E}
+.field.invalid .err{display:block}
+.form-card .btn{width:100%;padding:1.05rem;font-size:1rem}
+.demo-note{margin-top:14px;font-size:.83rem;color:var(--muted);line-height:1.5}
+.form-success{display:none;text-align:center;padding:20px 0 6px}
+.form-success.show{display:block}
+.form-success .ok{width:60px;height:60px;border-radius:50%;background:var(--lime);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.form-success .ok svg{width:30px;height:30px;color:var(--ink)}
+.form-success h4{font-family:var(--font-d);font-weight:700;font-size:1.3rem;text-transform:uppercase;color:var(--ink)}
+.form-success p{color:var(--muted);margin-top:8px}
+.form-success a{color:var(--ink);font-weight:700}
+.talk-card h3{font-family:var(--font-d);font-weight:700;font-size:1.35rem;text-transform:uppercase;margin-bottom:6px}
+.talk-card>p{color:var(--muted-lt);margin-bottom:22px}
+.talk-row{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--line-lt)}
+.talk-row:last-of-type{border-bottom:none}
+.talk-row .ic{width:44px;height:44px;flex:none;border-radius:var(--radius-sm);background:var(--ink-2);border:1px solid var(--line-lt);display:flex;align-items:center;justify-content:center;color:var(--lime)}
+.talk-row .ic svg{width:22px;height:22px}
+.talk-row .t-lbl{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-lt)}
+.talk-row a{color:#fff;font-weight:700;font-size:1.08rem;text-decoration:none}
+.talk-row a:hover{color:var(--lime)}
+.talk-row .t-sub{font-size:.9rem;color:var(--muted-lt)}
+/* faq */
+.faq-list{max-width:780px}
+.faq-list details{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:12px;overflow:hidden}
+.faq-list summary{cursor:pointer;padding:18px 22px;font-family:var(--font-d);font-weight:600;font-size:1.08rem;text-transform:uppercase;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--lime-deep);flex:none}
+.faq-list details[open ] summary::after{content:"−"}
+.faq-list details p{padding:0 22px 20px;color:var(--muted)}
+/* footer */
+footer{background:var(--ink);color:var(--muted-lt);padding:56px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;padding-bottom:40px}
+.foot-brand img{height:52px;width:auto;background:var(--paper);border-radius:8px;padding:6px 10px}
+.foot-brand p{margin-top:14px;font-size:.92rem;max-width:26rem}
+.foot-col h4{font-family:var(--font-d);font-weight:600;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-bottom:14px}
+.foot-col a{display:block;color:var(--muted-lt);text-decoration:none;padding:5px 0;font-size:.95rem}
+.foot-col a:hover{color:var(--lime)}
+.foot-col address{font-style:normal;font-size:.95rem;line-height:1.7}
+.foot-base{border-top:1px solid var(--line-lt);padding:18px 0 96px;font-size:.82rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot-base .demo-tag{color:var(--muted-lt)}
+/* sticky call bar */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--ink);border-top:2px solid var(--lime);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:10px;transform:translateY(110%);transition:transform .25s var(--ease);box-shadow:0 -6px 24px rgba(0,0,0,.3)}
+.callbar.show{transform:translateY(0)}
+.callbar .btn{flex:1;padding:.85rem .5rem;font-size:.92rem}
+.callbar .btn-ghost{border-color:rgba(255,255,255,.55)}
+body.has-callbar{padding-bottom:0}
+/* reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .55s var(--ease),transform .55s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+/* ---------- responsive ---------- */
+@media (max-width:1023px){
+  nav.main{display:none}
+  .hero-grid{grid-template-columns:1fr;gap:36px;padding:56px 0 64px}
+  .hero-photo{max-width:640px}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .work-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid{grid-template-columns:1fr;gap:36px}
+  .quote-grid{grid-template-columns:1fr;gap:36px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:767px){
+  .wrap{padding:0 20px}
+  .header-phone .ph-text{display:none}
+  .header-phone{width:48px;height:48px;border:2px solid var(--line);border-radius:var(--radius-sm);justify-content:center}
+  .menu-btn{display:inline-flex}
+  .brand img{height:40px}
+  .header-cta .btn{padding:.8rem 1rem;font-size:.85rem}
+  .section{padding:60px 0}
+  .trust .wrap{grid-template-columns:repeat(2,1fr);gap:20px 12px}
+  .svc-grid{grid-template-columns:1fr}
+  .work-grid{grid-template-columns:1fr}
+  .work img{aspect-ratio:4/3}
+  .work.tall img{aspect-ratio:4/3}
+  .process-grid{grid-template-columns:1fr}
+  .hero-cta .btn{flex:1 1 auto}
+  .foot-grid{grid-template-columns:1fr}
+  .foot-base{padding-bottom:110px}
+}
+@media (max-width:400px){
+  .header-in{padding-left:16px;padding-right:16px;gap:8px}
+  .brand img{height:36px}
+  .header-phone{width:44px;height:44px}
+  .menu-btn{width:44px;height:44px}
+  .header-cta .btn{padding:.75rem .8rem}
+}
+@media (max-width:360px){
+  .header-cta .btn{padding:.8rem .8rem;font-size:.8rem}
+  .hero-cta{flex-direction:column}
+  .hero-cta .btn{width:100%}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="utility">
+  <div class="wrap">
+    <span><b>Cushing, OK</b> &nbsp;·&nbsp; Family-owned since 2015 &nbsp;·&nbsp; Free estimates</span>
+    <span>Call <a class="u-phone" href="tel:+19183993788">(918) 399-3788</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap header-in">
+    <a class="brand" href="#top" aria-label="DOVE Construction — home">
+      <img src="assets/logo.png" alt="DOVE Construction logo — a dove in a lime-green circle" width="532" height="228">
+    </a>
+    <nav class="main" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-cta">
+      <a class="header-phone" href="tel:+19183993788" aria-label="Call DOVE Construction at (918) 399-3788">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="ph-text">(918) 399-3788</span>
+      </a>
+      <a class="btn btn-lime" href="#quote">Free Estimate</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="#services">Services</a>
+    <a href="#work">Our Work</a>
+    <a href="#about">About</a>
+    <a href="#quote">Free Estimate</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<main id="main">
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Remodeling &amp; Construction · Cushing, OK</span>
+      <h1>You dream it.<br><span class="accent">We design it.</span></h1>
+      <p class="lede">Family-owned remodeling and construction in Cushing since 2015. Kitchens, baths, additions, decks — <b>built with integrity, managed with dedication.</b></p>
+      <div class="hero-cta" id="heroCta">
+        <a class="btn btn-lime" href="tel:+19183993788">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (918) 399-3788</a>
+        <a class="btn btn-ghost" href="#quote">Get a Free Estimate</a>
+      </div>
+      <p class="hero-proof"><span><b>Best of Cimarron Valley</b> — General Contractor, 2022 · 2023 · 2024 · 2025</span></p>
+    </div>
+    <figure class="hero-photo">
+      <img src="assets/hero-room.jpg" alt="Finished kitchen remodel by DOVE Construction — white cabinets, granite counters, island and table extension" width="900" height="675" fetchpriority="high">
+      <figcaption><b>Finished kitchen remodel</b> — white cabinets, granite counters, island &amp; table extension</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-item"><div class="num">Since 2015</div><div class="lbl">Family-owned</div></div>
+    <div class="trust-item"><div class="num">75+ Years</div><div class="lbl">Combined experience</div></div>
+    <div class="trust-item"><div class="num">6-Man Crew</div><div class="lbl">One team, start to finish</div></div>
+    <div class="trust-item"><div class="num">Fully Insured</div><div class="lbl">Background-checked crew</div></div>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What we build</span>
+      <h2>Remodeling, additions &amp; outdoor living</h2>
+      <p>From a new kitchen to a whole new room — one crew, start to finish, right here in Cushing.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18"/><path d="M5 11V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/><path d="M5 11v9h14v-9"/><path d="M9 20v-4h6v4"/></svg></div>
+        <h3>Kitchen Remodels</h3>
+        <p>Full-scale kitchen reconstruction — custom layouts, cabinetry, granite, quartz &amp; butcher-block counters, backsplashes, layered lighting, and new floors.</p>
+        <div class="tags">Cabinets · Counters · Lighting</div>
+      </article>
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h20"/><path d="M6 12V6a2 2 0 0 1 4 0"/><path d="M4 12v2a6 6 0 0 0 6 6h4a6 6 0 0 0 6-6v-2"/><path d="M12 8v4"/></svg></div>
+        <h3>Bathroom Remodels</h3>
+        <p>Spa-like baths — custom walk-in showers with Schluter-Kerdi waterproofing, curbless entries, niches and benches, double vanities, soaking tubs, custom tile.</p>
+        <div class="tags">Showers · Vanities · Tile</div>
+      </article>
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M16 3h3a2 2 0 0 1 2 2v3"/><path d="M8 21H5a2 2 0 0 1-2-2v-3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/><path d="M3 12h18"/></svg></div>
+        <h3>Open-Concept Remodels</h3>
+        <p>Structural wall removal and LVL beam installation — opening up closed-off rooms into one space that actually lives the way you do.</p>
+        <div class="tags">Wall removal · LVL beams</div>
+      </article>
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M12 12v3"/><path d="M12 15h.01"/></svg></div>
+        <h3>Home Additions &amp; Exteriors</h3>
+        <p>Ground-up additions — master suites, home offices, in-law suites — plus James Hardie siding, energy-efficient windows &amp; doors, and porch work.</p>
+        <div class="tags">Additions · James Hardie siding</div>
+      </article>
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V10"/><path d="M12 10 5 4"/><path d="M12 10l7-6"/><path d="M5 4v4"/><path d="M19 4v4"/><path d="M3 22h18"/></svg></div>
+        <h3>Decking &amp; Outdoor Structures</h3>
+        <p>Custom multi-level decks in premium wood or low-maintenance composite — plus detached garages, workshops, pavilions, and covered outdoor living.</p>
+        <div class="tags">Decks · Garages · Pavilions</div>
+      </article>
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+        <h3>New Flooring Installation</h3>
+        <p>LVP, engineered hardwood, solid sand-and-finish hardwood, and premium carpet — with proper subfloor assessment, leveling, and moisture barriers first.</p>
+        <div class="tags">LVP · Hardwood · Carpet</div>
+      </article>
+    </div>
+    <div class="also reveal">
+      <b>Also on the list:</b> plumbing, electrical &amp; heating systems, professional painting &amp; finishing — and the honey-do list: paint that room, update the bathroom, fix the deck, new flooring, stain the fence, finish the project you started.
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK GALLERY ============ -->
+<section class="section gallery-sec" id="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Our work</span>
+      <h2>Finished work, from Cushing homes</h2>
+      <p>Real projects from the DOVE crew — kitchens, baths, and outdoor living, built start to finish.</p>
+    </div>
+    <div class="work-grid">
+      <figure class="work tall reveal">
+        <img src="assets/work-kitchen-island.jpg" alt="Finished kitchen remodel by DOVE Construction — long granite island with gas cooktop, lantern pendant lights, mosaic backsplash" width="900" height="1200" loading="lazy">
+        <figcaption><b>Kitchen remodel</b>Granite island, gas cooktop, mosaic backsplash</figcaption>
+      </figure>
+      <figure class="work tall reveal">
+        <img src="assets/work-shower.jpg" alt="Finished walk-in shower by DOVE Construction — gray stone-look tile, recessed niche, grab bar, tiled bench, linear drain" width="900" height="1200" loading="lazy">
+        <figcaption><b>Walk-in shower</b>Stone tile, niche, bench &amp; linear drain</figcaption>
+      </figure>
+      <figure class="work reveal">
+        <img src="assets/work-deck.jpg" alt="Newly built wood deck by DOVE Construction on the back of a brick house" width="900" height="1036" loading="lazy">
+        <figcaption><b>New deck</b>Fresh build on a brick home</figcaption>
+      </figure>
+      <figure class="work reveal">
+        <img src="assets/work-kitchen-1.jpg" alt="Finished kitchen remodel by DOVE Construction — white Shaker cabinets, granite counters, mosaic backsplash" width="900" height="1200" loading="lazy">
+        <figcaption><b>Kitchen remodel</b>White Shaker cabinets, granite counters</figcaption>
+      </figure>
+      <figure class="work reveal">
+        <img src="assets/work-bath-1.jpg" alt="Finished bathroom remodel by DOVE Construction — dark gray double vanity, marble-look counters, patterned floor tile" width="900" height="675" loading="lazy">
+        <figcaption><b>Bathroom remodel</b>Double vanity, patterned floor tile</figcaption>
+      </figure>
+      <figure class="work reveal">
+        <img src="assets/work-kitchen-3.jpg" alt="Finished kitchen remodel by DOVE Construction — warm wood cabinets, granite counters, stacked-stone backsplash" width="900" height="686" loading="lazy">
+        <figcaption><b>Kitchen remodel</b>Warm wood cabinets, stacked stone</figcaption>
+      </figure>
+    </div>
+    <p class="gallery-note">Photos: finished DOVE Construction projects. More in the full gallery — ask us about a project like yours.</p>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div class="about-copy reveal">
+      <span class="eyebrow">About DOVE</span>
+      <h2 style="font-family:var(--font-d);font-weight:700;font-size:clamp(1.85rem,3.8vw,2.7rem);line-height:1.05;text-transform:uppercase;color:var(--ink);margin:.7rem 0 .9rem">A family crew, building Cushing one home at a time</h2>
+      <p class="lede">Don Huckabay has worked in construction since 1981 — roofing crews, new-home builders, apartment rehab teams. In 2012, he and Verna started flipping houses together. In 2015, they founded DOVE Construction.</p>
+      <p>Verna was a school teacher before she co-founded the company, and she brings the design eye — color coordination, layout, organization. Their son Alan helps run the company day to day. The crew is six people with 75+ years of combined experience:</p>
+      <div class="crew-list" aria-label="The DOVE crew">
+        <span>Don</span><span>Alan</span><span>Andrew</span><span>Stephen</span><span>Johney</span><span>Jeremiah</span>
+      </div>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Fully insured</b> — and every employee is background-checked.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Best of Cimarron Valley — General Contractor, 2022, 2023, 2024 &amp; 2025.</b></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Rooted in Cushing</b> — Chamber member since 2016; Don chairs the Chamber Board of Directors.</span></li>
+      </ul>
+      <div class="quote-card">
+        <blockquote>“If you ever need a contractor for a home improvement project, we highly recommend DOVE Construction. They did our patio cover, deck &amp; raised koi pond.”</blockquote>
+        <cite>— <b>Lori Toland</b>, DOVE customer</cite>
+      </div>
+      <p class="quote-theme">It's the kind of thing Cushing neighbors say about this crew again and again: they show up, they do phenomenal work — and they've even given change back on the bid price.</p>
+    </div>
+    <div class="reveal">
+      <figure class="about-photo">
+        <img src="assets/work-pantry.jpg" alt="Pantry built by DOVE Construction — stained-wood sliding barn doors on black hardware, open shelving" width="480" height="640" loading="lazy">
+        <figcaption><b>Pantry, sliding barn doors</b> — one of the details Verna plans into a kitchen.</figcaption>
+      </figure>
+      <div class="quote-card" style="margin-top:20px">
+        <blockquote>“Build with integrity, managed with dedication.”</blockquote>
+        <cite>— The DOVE Construction mission</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section tight" id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>Dream it. Design it.<br>Build it.</h2>
+    </div>
+    <div class="process-grid">
+      <article class="step reveal">
+        <div class="step-no">01</div>
+        <h3>Tell us the dream</h3>
+        <p>Call, text, or send the form below. Tell us what you're picturing — a kitchen, a bath, an addition, a deck. Estimates are free.</p>
+      </article>
+      <article class="step reveal">
+        <div class="step-no">02</div>
+        <h3>We design it with you</h3>
+        <p>Layout, color, materials — Verna's design eye and the crew's structural know-how, planned out before a single wall comes down.</p>
+      </article>
+      <article class="step reveal">
+        <div class="step-no">03</div>
+        <h3>We build it</h3>
+        <p>One six-man crew, start to finish. Seventy-five-plus years of combined experience, on your home until it's done right.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE ============ -->
+<section class="section quote-sec" id="quote">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Free estimates</span>
+      <h2>Request your free estimate</h2>
+      <p>Tell us about the project. We read every request ourselves and get back to you — or just call, we're happy to talk it through.</p>
+    </div>
+    <div class="quote-grid">
+      <div class="form-card reveal">
+        <form id="quoteForm" novalidate>
+          <h3>Request an estimate</h3>
+          <p class="form-sub">Three fields, and we'll take it from there.</p>
+          <div class="field" id="f-name">
+            <label for="q-name">Your name <span class="req" aria-hidden="true">*</span></label>
+            <input id="q-name" name="name" type="text" autocomplete="name" required>
+            <p class="err">Please tell us your name.</p>
+          </div>
+          <div class="field" id="f-phone">
+            <label for="q-phone">Phone number <span class="req" aria-hidden="true">*</span></label>
+            <input id="q-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+            <p class="err">Please add a phone number so we can reach you.</p>
+            <p class="hint">We call you back — that's the whole point of the form.</p>
+          </div>
+          <div class="field" id="f-type">
+            <label for="q-type">What kind of project? <span class="req" aria-hidden="true">*</span></label>
+            <select id="q-type" name="project-type" required>
+              <option value="" selected>Choose one…</option>
+              <option>Kitchen remodel</option>
+              <option>Bathroom remodel</option>
+              <option>Open-concept remodel</option>
+              <option>Home addition / exterior</option>
+              <option>Deck &amp; outdoor structure</option>
+              <option>New flooring</option>
+              <option>Something else / honey-do list</option>
+            </select>
+            <p class="err">Please choose a project type.</p>
+          </div>
+          <div class="field">
+            <label for="q-msg">Anything to add? <span style="font-weight:400;color:var(--muted)">(optional)</span></label>
+            <textarea id="q-msg" name="message" rows="3" placeholder="Rough size, timing, what's bugging you about the space…"></textarea>
+          </div>
+          <button class="btn btn-lime" type="submit" id="q-submit">Request My Free Estimate</button>
+          <p class="demo-note">Demo note: on this preview the form doesn't send or store anything. On the live site, requests go straight to the shop.</p>
+        </form>
+        <div class="form-success" id="formSuccess" role="status">
+          <div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <h4>Request received</h4>
+          <p>Thanks — we'll be in touch. In a hurry? Call us now at <a href="tel:+19183993788">(918) 399-3788</a>.</p>
+        </div>
+      </div>
+      <div class="talk-card reveal">
+        <h3>Prefer to talk?</h3>
+        <p>Call or text — a real person answers, and an estimate is always free.</p>
+        <div class="talk-row">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div>
+            <div class="t-lbl">Call</div>
+            <a href="tel:+19183993788">(918) 399-3788</a>
+            <div class="t-sub">Main line — call or message</div>
+          </div>
+        </div>
+        <div class="talk-row">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+          <div>
+            <div class="t-lbl">Call or text</div>
+            <a href="tel:+19188732299">(918) 873-2299</a>
+            <div class="t-sub">Text a photo of the project if you like</div>
+          </div>
+        </div>
+        <div class="talk-row">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div>
+          <div>
+            <div class="t-lbl">Email</div>
+            <a href="mailto:dovecompanies@gmail.com">dovecompanies@gmail.com</a>
+          </div>
+        </div>
+        <div class="talk-row">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-12-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <div class="t-lbl">Shop</div>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=DOVE+Construction,+938+E+9th+St,+Cushing,+OK+74023">938 E 9th St, Cushing, OK 74023</a>
+            <div class="t-sub">Serving Cushing &amp; surrounding communities</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Questions</span>
+      <h2>Before you call</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details>
+        <summary>Are estimates really free?</summary>
+        <p>Yes. Call, text, or send the form — we'll talk through the project and set up a time to see it. There's no charge for an estimate, and no obligation.</p>
+      </details>
+      <details>
+        <summary>Where do you work?</summary>
+        <p>We're based in Cushing, Oklahoma, and serve Cushing and the surrounding communities in Central Oklahoma.</p>
+      </details>
+      <details>
+        <summary>Are you insured?</summary>
+        <p>Yes — DOVE Construction is fully insured, and all employees are background-checked.</p>
+      </details>
+      <details>
+        <summary>Do you take on small jobs?</summary>
+        <p>Yes. Alongside full remodels and additions, we handle the honey-do list — paint a room, update a bathroom, fix the deck, new flooring, stain the fence, finish a project you started.</p>
+      </details>
+      <details>
+        <summary>Who will actually be on my job?</summary>
+        <p>Our own six-man crew — Don, Alan, Andrew, Stephen, Johney, and Jeremiah — with 75+ years of combined experience. One team, start to finish.</p>
+      </details>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/logo-mark.png" alt="DOVE Construction dove mark" width="228" height="228" style="height:52px;width:auto;background:transparent;border-radius:0;padding:0">
+        <p><b style="color:#fff">DOVE Construction</b> — family-owned remodeling &amp; construction in Cushing, Oklahoma since 2015. You dream it, we design it.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <address>
+          938 E 9th St<br>
+          Cushing, OK 74023<br>
+          <a href="tel:+19183993788">(918) 399-3788</a><br>
+          <a href="tel:+19188732299">(918) 873-2299 — call or text</a><br>
+          <a href="mailto:dovecompanies@gmail.com">dovecompanies@gmail.com</a>
+        </address>
+      </div>
+      <div class="foot-col">
+        <h4>Follow the work</h4>
+        <a href="https://www.facebook.com/doveproperties/">Facebook — DOVE Construction</a>
+        <a href="https://www.instagram.com/dove.construction/">Instagram — @dove.construction</a>
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#quote">Request a Free Estimate</a>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 DOVE Construction · Cushing, OK · Family-owned since 2015</span>
+      <span class="demo-tag">Concept preview built for DOVE Construction — form submissions aren't sent or stored on this demo.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY CALL BAR ============ -->
+<div class="callbar" id="callBar" role="region" aria-label="Quick actions">
+  <a class="btn btn-lime" href="tel:+19183993788">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call Now</a>
+  <a class="btn btn-ghost" href="#quote">Free Estimate</a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* Mobile menu */
+  var menuBtn = document.getElementById("menuBtn");
+  var mobileMenu = document.getElementById("mobileMenu");
+  menuBtn.addEventListener("click", function(){
+    var open = mobileMenu.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  });
+  mobileMenu.querySelectorAll("a").forEach(function(a){
+    a.addEventListener("click", function(){
+      mobileMenu.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  /* Sticky call bar: show only once the hero CTA has scrolled away */
+  var bar = document.getElementById("callBar");
+  var heroCta = document.getElementById("heroCta");
+  if ("IntersectionObserver" in window && heroCta) {
+    var io = new IntersectionObserver(function(entries){
+      var visible = entries[0].isIntersecting;
+      bar.classList.toggle("show", !visible);
+      document.body.style.paddingBottom = !visible ? bar.offsetHeight + "px" : "0px";
+    }, { threshold: 0 });
+    io.observe(heroCta);
+  } else {
+    bar.classList.add("show");
+  }
+
+  /* Scroll reveal (transform/opacity only, once) */
+  var reveals = document.querySelectorAll(".reveal");
+  if (!prefersReduced && "IntersectionObserver" in window) {
+    var ro = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add("in"); ro.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(function(el){ ro.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add("in"); });
+  }
+
+  /* Quote form: kind inline validation + demo success state */
+  var form = document.getElementById("quoteForm");
+  var success = document.getElementById("formSuccess");
+  function setInvalid(id, bad){
+    document.getElementById(id).classList.toggle("invalid", bad);
+    return !bad;
+  }
+  form.addEventListener("submit", function(ev){
+    ev.preventDefault();
+    var name = document.getElementById("q-name").value.trim();
+    var phone = document.getElementById("q-phone").value.trim();
+    var type = document.getElementById("q-type").value;
+    var ok = true;
+    ok = setInvalid("f-name", name === "") && ok;
+    ok = setInvalid("f-phone", phone.replace(/[^0-9]/g, "").length < 7) && ok;
+    ok = setInvalid("f-type", type === "") && ok;
+    if (!ok) {
+      var firstBad = form.querySelector(".field.invalid input, .field.invalid select");
+      if (firstBad) firstBad.focus();
+      return;
+    }
+    form.style.display = "none";
+    success.classList.add("show");
+    success.scrollIntoView({ behavior: prefersReduced ? "auto" : "smooth", block: "center" });
+  });
+  ["q-name","q-phone","q-type"].forEach(function(id){
+    document.getElementById(id).addEventListener("input", function(){
+      this.closest(".field").classList.remove("invalid");
+    });
+  });
+})();
+</script>
+</body>
+</html>
